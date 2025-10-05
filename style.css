@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.main{
+    height: 100%;
+    width:100%;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.main .nav{
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.main .nav h4{
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main .nav #signin{
+    color: rgb(192, 11, 11);
+}
+
+.main .nav #logo{
+    font-size: 30px;
+    color: rgb(2, 194, 25);
+}
+
+.main .about {
+    height: 80%;
+    width: 30%;
+    
+}
+
+.main .about img{
+    height: 200px;
+    padding-top: 40px;
+}
+
+.main .about h1{
+    font-size: 70px;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.main .about button{
+    width: 200px;
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+.cardContainer{
+    width: 64%;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100vh;
+    overflow-x: scroll;
+}
+
+    .cardContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+.card{
+    height: 190px;
+    width: 270px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card1{
+    background-image: url(bg1.jpg);
+}
+#card2{
+    background-image: url(bg2.jpg);
+}
+#card3{
+    background-image: url(bg3.jpg);
+}
+#card4{
+    background-image: url(bg4.jpg);
+}
+#card5{
+    background-image: url(bg5.jpg);
+}
+#card6{
+    background-image: url(bg6.jpg);
+}
+#card7{
+    background-image: url(bg7.jpg);
+}
+#card8{
+    background-image: url(bg8.jpg);
+}
+#card9{
+    background-image: url(bg9.jpg);
+}
+
+.card .about{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .about img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .about .nameAdd .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .about .nameAdd .address{
+    color: rgb(255, 255, 255);
+}
+
+.card .proff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .proff .proffession{
+    width: 120px;
+    color: rgb(255, 102, 0);
+    background-color: rgb(215, 195, 150);
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.card .proff .proffession:hover{
+    background-color: rgb(205, 196, 175);
+}
+
+.card .proff .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .proff .socials .social{
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card .proff .socials .insta{
+    color: green;
+}
+.card .proff .socials .insta:hover{
+    background-color: green;
+    color: #fff;
+}
+.card .proff .socials .facebook{
+    color: royalblue;
+}
+.card .proff .socials .insta:hover{
+    background-color: royalblue;
+    color: #fff;
+}
+.card .proff .socials .linkedin{
+    color: rgb(255, 0, 191);
+}
+.card .proff .socials .linkedin:hover{
+    background-color: rgb(255, 0, 191);
+    color: #fff;
+}
+
+.card .proff .socials .social:hover{
+    background-color: transparent;
+}
+
+.card .inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .inputs .like{
+    background-color:transparent;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.card .inputs .like:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.card .inputs button{
+    width: 150px;
+    color: #fff;
+    background-color: royalblue;
+    padding: 7px 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid royalblue;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card .inputs button:hover{
+    border:1px solid royalblue;
+    background-color: transparent;
+    color: royalblue;
+}
+
